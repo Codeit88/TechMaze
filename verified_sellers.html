@@ -1,0 +1,100 @@
+{% extends "Index.html" %}
+
+{% block title %}
+    <title>Admin</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h2>------------------Admin Panel------------------</h2>
+  <ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Seller 1
+      <span class="badge badge-success badge-pill">Verified</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Seller 2
+      <span class="badge badge-success badge-pill">Verified</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Seller 3
+      <span class="badge badge-success badge-pill">Verified</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Seller 4
+      <span class="badge badge-success badge-pill">Verified</span>
+    </li>
+  </ul>
+</div>
+
+{% endblock %}
+<style>
+
+body {
+        font-family: "Amatic SC", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://c0.wallpaperflare.com/preview/200/623/639/access-apple-blur-connection.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  
+  h2 {
+
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 0;
+    text-align: center;
+    color: aliceblue;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  
+  .lead {
+    color: aliceblue;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .list-group {
+    margin-top: 30px;
+  }
+  
+  .list-group-item {
+   color: aliceblue;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 0;
+  }
+  
+  .badge {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+  
+  .badge-success {
+    background-color: #28a745;
+  }
+  
+  .badge-pill {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+  }
+</style>

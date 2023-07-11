@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TechMaze - Cart</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+  
+
+<style>
+
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Amatic SC", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://c0.wallpaperflare.com/preview/200/623/639/access-apple-blur-connection.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Navigation bar styles */
+.navbar {
+    color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0f0f0f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cart a {
+  background-color: #f44336;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cart a:hover {
+  background-color: #e53935;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 24px;
+  color: #fff;
+}
+
+.button {
+  background-color: #f44336;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #e53935;
+}
+
+/* Content styles */
+.content {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(8, 8, 8, 0.8);
+  padding: 50px;
+  border-radius: 8px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #f8f6f6;
+}
+
+tr {
+  background-color: #bdb2b2;
+}
+
+.checkout {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.checkout:hover {
+  background-color: #388e3c;
+}
+
+.empty-cart {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #888;
+  text-align: center;
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color:
+}
+
+
+footer {
+  background-color: #070606;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 45%;
+}
+
+.about-us h3 {
+  margin-top: 0;
+}
+
+.contact-us {
+  width: 45%;
+  padding: 20px;
+}
+
+.contact-us h3 {
+  margin-top: 0;
+}
+
+.contact-us ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-us li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.contact-us i {
+  margin-right: 10px;
+}
+      
+
+
+</style>
+
+
+
+</head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">TechMaze</a>
+      </div>
+    </nav>
+<!-- Header -->
+<header class="header">
+  <h1 class="heading">Your Cart</h1>
+  <h2 class="subheading">Here are your selected items</h2>
+  <button class="button">Continue Shopping</button>
+</header>
+
+<!-- Content -->
+<main class="content">
+  <table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Product 1</td>
+        <td>$10.00</td>
+        <td>2</td>
+        <td>$20.00</td>
+      </tr>
+      <tr>
+        <td>Product 2</td>
+        <td>$15.00</td>
+        <td>1</td>
+        <td>$15.00</td>
+      </tr>
+      <tr>
+        <td>Product 3</td>
+        <td>$20.00</td>
+        <td>3</td>
+        <td>$60.00</td>
+      </tr>
+      <tr>
+        <td colspan="3"><strong>Subtotal</strong></td>
+        <td>$95.00</td>
+      </tr>
+      <tr>
+        <td colspan="3"><strong>Tax (10%)</strong></td>
+        <td>$9.50</td>
+      </tr>
+      <tr>
+        <td colspan="3"><strong>Total</strong></td>
+        <td>$104.50</td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="checkout">Checkout</button>
+  <p class="empty-cart">Your cart is empty.</p>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+
+  <div class="container">
+    <div class="footer-wrapper">
+      <div class="about-us w3-text-white">
+        <h3>About Us</h3>
+        <p>TechMaze is your one-stop destination for all your technology needs. We offer a wide range of products, including smartphones, laptops, gaming consoles, and much more. Our goal is to provide our customers with the latest technology at the most affordable prices.</p>
+      </div>
+      <div class="contact-us w3-text-white">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Address: Milaad Street Block B-81 Faisal Town,Lahore</li>
+          <li><i class="fas fa-phone"></i> Phone no. : (555) 555-1234</li>
+          <li><i class="fas fa-envelope"></i> Email : techmaze@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>

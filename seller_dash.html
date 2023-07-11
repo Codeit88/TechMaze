@@ -1,0 +1,65 @@
+{% extends "Index.html" %}
+
+{% block title %}
+    <title>Seller Dashboard</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="dashboard-title">Welcome to your Seller Dashboard</h2>
+        <div class="dashboard-actions">
+            <a href="{% url 'seller:Add_Product' %}" class="dashboard-action">Add Product</a>
+        </div>
+    </div>
+{% endblock %}
+
+<style>
+    body {
+        font-family: "Amatic SC", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://c0.wallpaperflare.com/preview/200/623/639/access-apple-blur-connection.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .dashboard-title {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .dashboard-actions {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .dashboard-action {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0077be;
+        transition: background-color 0.2s ease-in-out;
+        margin: 0 10px;
+    }
+    
+    .dashboard-action:hover {
+        background-color: #005ea8;
+    }
+</style>
